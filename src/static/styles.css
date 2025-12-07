@@ -30,6 +30,14 @@
   --error-light: #ffebee;
   --info: #0c5460;
   --info-light: #d1ecf1;
+
+  /* Social media brand colors */
+  --twitter-blue: #1DA1F2;
+  --twitter-blue-hover: #0d8bd9;
+  --facebook-blue: #1877F2;
+  --facebook-blue-hover: #0e63d1;
+  --linkedin-blue: #0A66C2;
+  --linkedin-blue-hover: #084d91;
 }
 
 * {
@@ -265,6 +273,71 @@ section h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Social Share Section */
+.share-section {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.share-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.twitter-share {
+  background-color: var(--twitter-blue);
+  color: white;
+}
+
+.twitter-share:hover {
+  background-color: var(--twitter-blue-hover);
+}
+
+.facebook-share {
+  background-color: var(--facebook-blue);
+  color: white;
+}
+
+.facebook-share:hover {
+  background-color: var(--facebook-blue-hover);
+}
+
+.linkedin-share {
+  background-color: var(--linkedin-blue);
+  color: white;
+}
+
+.linkedin-share:hover {
+  background-color: var(--linkedin-blue-hover);
 }
 
 /* Buttons */
