@@ -472,8 +472,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Function to generate share URLs for social media
-  function generateShareUrls(activityName, description, schedule) {
+  /**
+   * Generate social media sharing URLs for an activity
+   * @param {string} activityName - The name of the activity
+   * @param {string} description - The activity description
+   * @returns {Object} Object containing sharing URLs for Twitter, Facebook, and LinkedIn
+   */
+  function generateShareUrls(activityName, description) {
     const baseUrl = window.location.origin + window.location.pathname;
     const shareText = `Check out ${activityName} at Mergington High School! ${description}`;
     const encodedText = encodeURIComponent(shareText);
@@ -534,7 +539,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
 
     // Generate social sharing URLs
-    const shareUrls = generateShareUrls(name, details.description, formattedSchedule);
+    const shareUrls = generateShareUrls(name, details.description);
 
     activityCard.innerHTML = `
       ${tagHtml}

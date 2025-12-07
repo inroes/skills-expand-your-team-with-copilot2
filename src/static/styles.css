@@ -30,6 +30,14 @@
   --error-light: #ffebee;
   --info: #0c5460;
   --info-light: #d1ecf1;
+
+  /* Social media brand colors */
+  --twitter-blue: #1DA1F2;
+  --twitter-blue-hover: #0d8bd9;
+  --facebook-blue: #1877F2;
+  --facebook-blue-hover: #0e63d1;
+  --linkedin-blue: #0A66C2;
+  --linkedin-blue-hover: #084d91;
 }
 
 * {
@@ -306,30 +314,30 @@ section h3 {
 }
 
 .twitter-share {
-  background-color: #1DA1F2;
+  background-color: var(--twitter-blue);
   color: white;
 }
 
 .twitter-share:hover {
-  background-color: #0d8bd9;
+  background-color: var(--twitter-blue-hover);
 }
 
 .facebook-share {
-  background-color: #1877F2;
+  background-color: var(--facebook-blue);
   color: white;
 }
 
 .facebook-share:hover {
-  background-color: #0e63d1;
+  background-color: var(--facebook-blue-hover);
 }
 
 .linkedin-share {
-  background-color: #0A66C2;
+  background-color: var(--linkedin-blue);
   color: white;
 }
 
 .linkedin-share:hover {
-  background-color: #084d91;
+  background-color: var(--linkedin-blue-hover);
 }
 
 /* Buttons */
